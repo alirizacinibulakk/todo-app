@@ -1,6 +1,129 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  background: rgb(246,211,101);
+  background: radial-gradient(circle, rgba(246,211,101,1) 0%, rgba(253,160,133,1) 100%);
+  font-family: system-ui, sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 40px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.todo-add {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 2rem;
+}
+
+.todo-add input {
+  flex: 1;
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  font-size: 16px;
+}
+
+.todo-add button {
+  padding: 16px 32px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.todo-add button:disabled {
+  background-color: #cccccc;
+}
+
+.todo-add button:hover:not(:disabled) {
+  background-color: #29a82f;
+}
+
+.todo-list {
+  list-style: none;
+}
+
+.todo {
+  background: white;
+  margin-bottom: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.todo label {
+  display: flex;
+  align-items: center;
+}
+
+.todo input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.todo input[type="checkbox"]:checked {
+  accent-color: #29a82f;
+}
+
+.todo span {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.line-through {
+  text-decoration: line-through;
+  color: #7c7b7b;
+}
+
+.todo button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.todo button:first-of-type {
+  background-color: #ff4444;
+  color: white;
+}
+.todo button:first-of-type:hover {
+  background-color: #df1919;
+}
+.todo button:last-of-type {
+  background-color: #4285f4;
+  color: white;
+}
+.todo button:last-of-type:hover {
+  background-color: #2573f1;
+}
+
+
+
